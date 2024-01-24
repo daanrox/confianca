@@ -5,7 +5,7 @@ Site institucional
 ![Confiança Soluções e Serviços](front_example.jpg)
 
 ### Deploy
-Aplicação em produção []()
+Aplicação em produção [https://daanrox.github.io/confianca/](https://daanrox.github.io/confianca/)
 
 ## Tecnologias Utilizadas
 
@@ -26,4 +26,4 @@ Se tiver dúvidas ou precisar de mais informações, sinta-se à vontade para en
 
 --- 
 
-Projeto desenvolvido para uma empresa de Gestão de Tráfego e Marketing Digital.
+"Consagre ao Senhor tudo o que você faz, e os seus planos serão bem-sucedidos."
