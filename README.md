@@ -1,6 +1,6 @@
 
 # Confiança Soluções e Serviços
-Site institucional
+Site institucional ainda em desenvolvimento
 
 ![Confiança Soluções e Serviços](front_example.jpg)
 
