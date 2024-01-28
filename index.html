@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confiança Soluções e Serviços</title>
+    <link rel="icon" href="./assets/logo_transparente.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;600&display=swap" rel="stylesheet">
@@ -12,12 +13,13 @@
 
 </head>
 <body>
+    <span id="top"></span>
     <header>
 
         <div class="header__container">
 
             <a href="#" class="logo">
-                <img class="header__logo" src="./assets/horizontal_transparente.png" alt="Confiança Soluções e Serviços"/>
+                <img class="header__logo" src="./assets/horizontal_transparente_white.png" alt="Confiança Soluções e Serviços"/>
             </a>
 
             <nav>
@@ -36,7 +38,7 @@
                     <p>(31) 99281-2273</p>
                 </div>
 
-                <span class="material-symbols-outlined menu__hamburguer">
+                <span style="cursor: pointer;" class="material-symbols-outlined menu__hamburguer">
                     menu
                 </span>
             </div>
@@ -44,7 +46,95 @@
 
     </header>
     <section class="banner__section">
-        <!-- <img src="./assets/portaria-remota.webp" alt="Porteiro em serviço pela Confiança Soluções e Serviços"/> -->
+        <div class="banner__description">
+            
+            <h1>Portaria e Controle de Acesso</h1>
+            <p>Soluções de controle de acesso Modernas e Eficientes</p>
+            <div>Solicitar Orçamento</div>
+        </div>
     </section>
+
+    
+
+
+
+    <footer>
+        <section class="footer__container">
+            <div class="footer__first">
+                <img src="./assets/vertical_transparente.png" alt="Logo Confiança duas mãos se apertando"/>
+                <p>Rua Gilson Diniz, 70 - Darcy Ribeiro, Contagem - MG</p>
+                <p>contato@daanrox.com</p>
+                <p>(31) 99281-2273</p>
+            </div>
+
+
+
+        </section>
+    </footer>
+
+    <div class="whatsapp-btn"></div>
+<form class='whatsapp__form' id="whatsapp-form">
+    <input type="hidden" name="_subject" value="Contato via WhatsApp">
+
+    <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+    </div>
+    <div>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu Telefone" required>
+    </div>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+    </div>
+    <button type="submit">Enviar</button>
+</form>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const whatsappBtn = document.querySelector('.whatsapp-btn');
+        const whatsappForm = document.getElementById('whatsapp-form');
+
+        whatsappBtn.addEventListener('click', function() {
+            whatsappForm.style.display = whatsappForm.style.display === 'block' ? 'none' : 'block';
+        });
+
+        whatsappForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio padrão do formulário
+            redirectToWhatsApp();
+        });
+
+        function redirectToWhatsApp() {
+            const nome = document.getElementById('nome').value;
+            const telefone = document.getElementById('telefone').value;
+            const email = document.getElementById('email').value;
+
+            const mensagem = `Olá, meu nome é ${nome}, telefone: ${telefone}, e-mail: ${email}.`;
+            const numero = '5531992812273';
+            const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
+            window.open(url, '_blank');
+        }
+    });
+</script>
+
+    <div class="footer__end">
+
+        <section class="back__top">
+            <a href="#top">
+                <span class="material-symbols-outlined arrow_upward">
+                    arrow_upward
+                </span>
+                <span>VOLTAR AO TOPO</span>
+            </a>
+        </section>
+    
+        <section class="development">
+            <p>Desenvolvido por <a href='https://daanrox.com/'>DAANROX</a></p>
+        </section>
+
+
+    </div>
 </body>
 </html>
