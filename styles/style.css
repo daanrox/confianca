@@ -1,332 +1,442 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-body{
-    font-family: 'Work Sans', sans-serif;
-    width: 100%;
-    /* position: fixed; */
-    top: 0;
-    left: 0;
+body {
+  font-family: "Work Sans", sans-serif;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
-header{
-    color: #fff;
-
+header {
+  color: #fff;
 }
 .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    backdrop-filter: blur(4px);
-    border-bottom: 1px solid #fff;
-    background-color: #00000063;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid #fff;
+  background-color: #00000063;
 }
 
 .header__container nav a {
-    text-decoration: none;
-    color: #fff;
-    margin: 0 20px;
-    transition: .2s;
-    font-weight: bold;
-    &:hover{
-        color: #09c2ff;
-    }
+  text-decoration: none;
+  color: #fff;
+  margin: 0 20px;
+  transition: 0.2s;
+  font-weight: bold;
+  &:hover {
+    color: #09c2ff;
+  }
 }
 .logo img {
-    width: 100%;
-    max-width: 200px;
-    filter: invert(0%);
+  width: 100%;
+  max-width: 200px;
+  filter: invert(0%);
 }
 
 .header__phone {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .menu__hamburguer {
-    cursor: pointer;
-    font-size: 1.5em;
-    transition: .2s;
-    display: none !important;
+  cursor: pointer;
+  font-size: 1.5em;
+  transition: 0.2s;
+  display: none !important;
 
-    &:hover{
-        color: #09c2ff;
-    }
+  &:hover {
+    color: #09c2ff;
+  }
 }
 .banner__section {
-    background-image: url(/assets/portaria-remota.webp);
-    width: 100%;
-    height: 65vh;
-    margin-top: -80px;
-    background-size: cover;
+  background-image: url("../assets/portaria-remota.webp");
+  width: 100%;
+  height: 65vh;
+  margin-top: -80px;
+  background-size: cover;
 }
 
-@media screen and (max-width:921px){
-    .telefone_e_menu_logo {
-        display: flex;
-        justify-content: space-between;
-        width: 240px;
-    }
-    .header__container nav {
-        display: none;
-    }
-    .menu__hamburguer {
-        display: flex !important;
-    }
+@media screen and (max-width: 921px) {
+  .telefone_e_menu_logo {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+  }
+  .header__container nav {
+    display: none;
+  }
+  .menu__hamburguer {
+    display: flex !important;
+  }
 }
-@media screen and (max-width:421px){
-    .header__phone{
-        display: none;
-    }
-    .telefone_e_menu_logo {
-        width: 25px;
-    }
+@media screen and (max-width: 421px) {
+  .header__phone {
+    display: none;
+  }
+  .telefone_e_menu_logo {
+    width: 25px;
+  }
 }
 
-.banner__description{
+.banner__description {
+  position: absolute;
+  color: whitesmoke;
+  top: 25%;
+  width: 100%;
+  padding: 3rem;
+  margin: 0 auto;
+  background-color: #00000063;
+  transition: 1s;
+}
+
+.banner__description > h1 {
+  font-size: 3.4rem;
+}
+
+.banner__description > p {
+  font-size: 1.8rem;
+}
+
+.banner__description > div {
+  background-color: #09c2ff;
+  width: 80%;
+  max-width: 16rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  transition: 1s;
+}
+.banner__description > div:hover {
+  cursor: pointer;
+  background-color: #039dd1;
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 1221px) {
+  .banner__description {
+    padding-left: 250px;
+  }
+}
+
+@media (max-width: 874px) {
+  .banner__description {
+    top: 5%;
+    margin: 85px auto;
+  }
+}
+
+@media screen and (max-width: 591px) {
+  .banner__description {
     position: absolute;
     color: whitesmoke;
-    top: 25%;
-    width: 100%;
-    padding: 3rem;
-    margin: 0 auto;
-    background-color: #00000063;
-    transition: 1s;
-}
-
-
-.banner__description>h1{
-    font-size: 3.4rem;
-}
-
-.banner__description>p{
-    font-size: 1.8rem;
-}
-
-.banner__description>div{
-    background-color: #09c2ff;
-    width: 80%;
-    max-width: 16rem;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 0.3rem;
-    margin-top: 1rem;
-    transition: 1s;
-}
-.banner__description>div:hover{
-    cursor: pointer;
-    background-color: #039dd1;
-    transform: scale(1.1);
-}
-
-
-@media screen and (min-width: 1221px){
-    .banner__description{
-        padding-left: 250px;
-    }
-}
-
-@media screen and (max-width:591px){
-    .banner__description{
-        position: absolute;
-        color: whitesmoke;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        top: 18%;
-        width: 100%;
-        padding: 2rem 1rem;
-        margin: 0 auto;
-        background-color: #00000050;
-    }
-
-
-    .banner__description>h1{
-        font-size: 2.4rem;
-    }
-    .banner__description>p{
-        font-size: 1rem;
-    }
-
-}
-
-@media screen and (max-width:421px){
-    .banner__description{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        top: 26%;
-        width: 100%;
-        padding: 2rem 1rem;
-        transition: 1s;
-    }
-   
-
-}
-
-
-footer{
-    background-color: rgba(218, 243, 255, 0.349);
-    height: 22rem;
-    color: #000000e8;
-    font-weight: 700;
-}
-
-.footer__container{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    padding: 2rem 0;
-    gap: 3rem
-}
-
-.footer__first{
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
-}
-
-.footer__first>img{
-    width: 50%;
-    max-width: 10rem;
-}
-
-.footer__first>p{
-    font-size: 1rem;
-}
-
-
-
-
-
-
-
-.whatsapp-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-image: url(https://static.wixstatic.com/media/5460fe_81615dc9cbf54cec86708a6b26ab8779~mv2.png);
-    background-size: cover;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    gap: 1rem;
+    top: 18%;
+    width: 100%;
+    padding: 2rem 1rem;
+    margin: 85px auto;
+    background-color: #00000050;
   }
 
-#whatsapp-form {
-    display: none;
-    position: fixed;
-    bottom: 100px;
-    right: 20px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    
+  .banner__description > h1 {
+    font-size: 2.4rem;
+  }
+  .banner__description > p {
+    font-size: 1rem;
+  }
 }
 
-#whatsapp-form>div>label{
-    color: #09c2ff;
-}
-
-#whatsapp-form>div>input{
-    border: 1px solid #09c2ff;
-    border-radius: 0.3rem;
-    height: 2rem;
-    min-width: 13rem;
-    padding: 1rem;
-}
-
-#whatsapp-form>div{
+@media screen and (max-width: 421px) {
+  .banner__description {
     display: flex;
     flex-direction: column;
-    gap:0.4rem;
-    margin: 0.4rem 0;
-}
-
-#whatsapp-form>button{
-    background-color: #09c2ff;
-    padding: 0.3rem 2rem;
-    color: white;
-    font-weight: 500;
-    font-size: 1.1rem;
-    height: 2rem;
-    margin-top: 0.8rem;
-    border-radius: 0.3rem;
-}
-
-#whatsapp-form>button:hover{
-    background-color: #039dd1;
-    cursor: pointer;
-}
-
-
-.footer__end{
-    display: flex;
-    flex-direction: column;
+    gap: 1rem;
+    top: 26%;
     width: 100%;
-    padding: 0;
-    background-image: url('../assets/controle-de-acesso.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.back__top{
-    width: fit-content;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    gap: 1rem;
-    height: 150px;
-    cursor: pointer;
-    text-decoration: none;
-}
-.back__top>a{
-    text-decoration: none;
-    color: #09c2ff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-.back__top>a:hover{
-    color: #039dd1;
-}
-
-.arrow_upward{
-    color: #09c2ff;
-    transform: scale(1.8);
+    padding: 2rem 1rem;
     transition: 1s;
-}
-.arrow_upward:hover{
-    color: #039dd1;
-    transform: scale(2.4);
-    cursor: pointer;
+  }
 }
 
-.development{
-    background-color: #00000063;
-    height: 3rem;
-    color:white;
+@media screen and (min-width: 4px) {
+  .banner__description {
+    position: absolute;
+    color: whitesmoke;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    top: 10%;
+    width: 100%;
+    padding: 2rem 1rem;
+    margin: 85px auto;
+    background-color: #00000050;
+  }
 }
-.development>p>a{
-    text-decoration: none;
-    color: #09c2ff;
+
+footer {
+  background-color: rgba(218, 243, 255, 0.349);
+  height: auto;
+  color: #000000e8;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.footer__first {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer__first > img {
+  width: 50%;
+  max-width: 10rem;
+}
+
+.footer__first > p {
+  font-size: 1rem;
+}
+
+.footer__second > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+@media (max-width: 540px) {
+  .footer__second > ul {
+    align-items: start;
+  }
+}
+
+.footer__second > ul > li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer__second > ul > li > a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+
+.footer__second > ul > li > a:hover {
+  color: #039dd1;
+}
+
+.footer__third > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer__third > ul > li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer__third > ul > li > a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+
+.footer__third > ul > li > a:hover {
+  color: #039dd1;
+}
+
+#socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__fourth {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__fourth > div > a > img {
+  width: 2rem;
+}
+
+#tags {
+  background-color: #09c2ff;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 2.2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: 2s;
+}
+@media (max-width: 1250px) {
+  #tags {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 840px) {
+  #tags {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 458px) {
+  #tags {
+    font-size: 1.2rem;
+    width: 100%;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+  }
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-image: url(https://static.wixstatic.com/media/5460fe_81615dc9cbf54cec86708a6b26ab8779~mv2.png);
+  background-size: cover;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#whatsapp-form {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#whatsapp-form > div > label {
+  color: #09c2ff;
+}
+
+#whatsapp-form > div > input {
+  border: 1px solid #09c2ff;
+  border-radius: 0.3rem;
+  height: 2rem;
+  min-width: 13rem;
+  padding: 1rem;
+}
+
+#whatsapp-form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 0.4rem 0;
+}
+
+#whatsapp-form > button {
+  background-color: #09c2ff;
+  padding: 0.3rem 2rem;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  height: 2rem;
+  margin-top: 0.8rem;
+  border-radius: 0.3rem;
+}
+
+#whatsapp-form > button:hover {
+  background-color: #039dd1;
+  cursor: pointer;
+}
+
+.footer__end {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  background-image: url("../assets/controle-de-acesso.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.back__top {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 1rem;
+  height: 150px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.back__top > a {
+  text-decoration: none;
+  color: #09c2ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.back__top > a:hover {
+  color: #039dd1;
+}
+
+.arrow_upward {
+  color: #09c2ff;
+  transform: scale(1.8);
+  transition: 1s;
+}
+.arrow_upward:hover {
+  color: #039dd1;
+  transform: scale(2.4);
+  cursor: pointer;
+}
+
+.development {
+  background-color: #00000063;
+  height: 4rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid white;
+}
+.development > p > a {
+  text-decoration: none;
+  color: #09c2ff;
 }
