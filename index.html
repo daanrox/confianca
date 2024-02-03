@@ -31,7 +31,7 @@
 
         <nav>
           <a href="#">Início</a>
-          <a href="#">Quem somos</a>
+          <a href="#about">Quem somos</a>
           <a href="#">Serviços</a>
           <a href="#">Blog</a>
           <a href="#">Contato</a>
@@ -54,11 +54,21 @@
     </header>
     <section class="banner__section">
       <div class="banner__description">
-        <h1>Portaria e Controle de Acesso</h1>
-        <p>Soluções de controle de acesso Modernas e Eficientes</p>
-        <div>Solicitar Orçamento</div>
+            <h1>Portaria e Controle de Acesso</h1>
+            <p>Soluções de controle de acesso Modernas e Eficientes</p>
+            <div>Solicitar Orçamento</div>
       </div>
     </section>
+
+    <section id='about' class="about__container">
+        <div class="about__section">
+            <h1>CONFIANÇA, a sua melhor escolha.</h1>
+            <p>A Confiança é uma empresa líder no setor de soluções e serviços, fornecendo profissionais altamente capacitados nas áreas de segurança, portaria, zeladoria e limpeza. Nossa equipe é dedicada a oferecer soluções abrangentes para serviços de limpeza e conservação em diversos tipos de edifícios, incluindo prédios públicos, privados, condomínios e empresas.</p>
+<!-- <p>Nossos profissionais passam por treinamentos rigorosos e são habilitados para exercer suas funções de maneira profissional e segura, garantindo aos nossos clientes serviços de altíssima qualidade. Estamos comprometidos em contribuir para o crescimento e fortalecimento das empresas contratantes, compreendendo seus desejos e respeitando seus valores.</p>
+<p>Nossa missão é superar as expectativas e satisfazer as necessidades dos nossos clientes, oferecendo serviços de qualidade realizados por profissionais devidamente treinados e capacitados. Estamos prontos para desenvolver nossas funções com competência e eficiência, sempre visando a excelência em tudo o que fazemos.</p> -->
+        </div>
+    </section>
+
 
     <section id="tags" class="efeito-3">
       <p
@@ -108,7 +118,6 @@
         Responsabilidade Ambiental
       </p>
     </section>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $(document).ready(function () {
@@ -151,6 +160,13 @@
         });
       });
     </script>
+
+
+    <section class="banner_trabalheconosco">
+        <img src="./assets/trabalhe-conosco.png" alt="Trabalhe com a Confiança Soluções e Serviços"/>
+    </section>
+
+
 
     <footer>
       <section class="footer__container">
@@ -261,15 +277,23 @@
         />
       </div>
       <button type="submit">Enviar</button>
+      <button class="btn-cancel" style="background-color: gray;"> Cancelar</button>
     </form>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const whatsappBtn = document.querySelector(".whatsapp-btn");
         const whatsappForm = document.getElementById("whatsapp-form");
+        const cancelBtn = document.querySelector('.btn-cancel');
+
+        cancelBtn.addEventListener("click", function () {
+            whatsappForm.style.display =
+            whatsappForm.style.display === "block" ? "none" : "block";
+        });
+
 
         whatsappBtn.addEventListener("click", function () {
-          whatsappForm.style.display =
+            whatsappForm.style.display =
             whatsappForm.style.display === "block" ? "none" : "block";
         });
 
