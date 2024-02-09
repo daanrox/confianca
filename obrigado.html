@@ -31,15 +31,15 @@
           <img
             class="header__logo"
             src="./assets/horizontal_transparente_white.png"
-            alt="Confiança Soluções e Serviços"
+            alt="Confiança Serviços e Soluções"
           />
         </a>
 
         <nav>
           <a href="/">Início</a>
-          <a href="#about">Quem somos</a>
-          <a href="#services">Serviços</a>
-          <a href="#">Blog</a>
+          <a href="/#about">Quem somos</a>
+          <a href="/#services">Serviços</a>
+          <a href="/#">Blog</a>
           <a href="./contato.html">Contato</a>
         </nav>
 
@@ -58,34 +58,15 @@
         </div>
       </div>
     </header>
-    <section class="banner__section">
-      <div class="banner__description">
-        <h1>Portaria e Controle de Acesso</h1>
-        <p>Soluções de controle de acesso Modernas e Eficientes</p>
-        <div id="orcamento">Solicitar Orçamento</div>
-      </div>
+    <section class="banner__contact">
+      
     </section>
-    <script>
-      const buttonOrcamento = document.getElementById('orcamento');
-      buttonOrcamento.addEventListener('click', ()=>{window.location.href = './contato.html'})
-
-    </script>
+    <section style="padding: 8rem 0; gap:1.2rem; width: 100%; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: center;;">
+      
+      <h1 style="font-size: 3rem; text-align: center; color: rgb(60, 211, 60); margin: 0 auto;width: 100%;">Mensagem Enviada!</h1>
+      <p style="font-size: 1.5rem; color: gray">Entraremos em contato o quanto antes</p>
     
-
-    <section id="about" class="about__container">
-      <div class="about__section">
-        <h1>CONFIANÇA, a sua melhor escolha.</h1>
-        <p>
-          A Confiança é uma empresa líder no setor de soluções e serviços,
-          fornecendo profissionais altamente capacitados nas áreas de segurança,
-          portaria, zeladoria e limpeza. Nossa equipe é dedicada a oferecer
-          soluções abrangentes para serviços de limpeza e conservação em
-          diversos tipos de edifícios, incluindo prédios públicos, privados,
-          condomínios e empresas.
-        </p>
-        <!-- <p>Nossos profissionais passam por treinamentos rigorosos e são habilitados para exercer suas funções de maneira profissional e segura, garantindo aos nossos clientes serviços de altíssima qualidade. Estamos comprometidos em contribuir para o crescimento e fortalecimento das empresas contratantes, compreendendo seus desejos e respeitando seus valores.</p>
-        <p>Nossa missão é superar as expectativas e satisfazer as necessidades dos nossos clientes, oferecendo serviços de qualidade realizados por profissionais devidamente treinados e capacitados. Estamos prontos para desenvolver nossas funções com competência e eficiência, sempre visando a excelência em tudo o que fazemos.</p> -->
-      </div>
+      <p style="font-size: 1.5rem;">Você será redirecionado para a página principal</p>
     </section>
 
     <section id="tags" class="efeito-3">
@@ -136,6 +117,10 @@
         Responsabilidade Ambiental
       </p>
     </section>
+
+    <script>
+      setTimeout(()=>{window.location= '/'}, 6000)
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $(document).ready(function () {
@@ -179,135 +164,12 @@
       });
     </script>
 
-    <section id="services" class="services__container">
-      <h2>Nossos Serviços</h2>
-      <div class="services__section">
-        <div class="services__card" id="card-limpeza">
-          <header>
-            <img src="./assets/limpeza-e-conservacao.png" />
-            <h3>Limpeza e conservação</h3>
-          </header>
-          <p>
-            Oferecemos aos nossos clientes diversas soluções de limpeza
-            adequadas às necessidades do negócio…
-          </p>
-          <button class="button_default">Saiba Mais</button>
-        </div>
-
-        <div class="services__card" id="card-portaria">
-          <header>
-            <img src="./assets/portaria.png" />
-            <h3>Portaria</h3>
-          </header>
-          <p>
-            Portaria, vigia 24 horas e controladores de acesso, para garantir a
-            segurança e a circulação ideal de pessoas e veículos…
-          </p>
-          <button class="button_default">Saiba Mais</button>
-        </div>
-
-        <div class="services__card" id="card-maodeobra">
-          <header>
-            <img src="./assets/locacao-de-mao-de-obra.png" />
-            <h3>Locação de mão de obra</h3>
-          </header>
-          <p>
-            Temos décadas de experiência na seleção, recrutamento, capacitação e
-            supervisão de trabalhadores em diversas áreas…
-          </p>
-          <button class="button_default">Saiba Mais</button>
-        </div>
-
-        <div class="services__card" id="card-cftv">
-          <header>
-            <img src="./assets/cftv.png" />
-            <h3>CFTV</h3>
-          </header>
-          <p>O sistema de Circuito Fechado de Televisão (CFTV) é uma solução de
-            segurança essencial para monitoramento contínuo de ambientes
-            comerciais, residenciais e industriais...
-          </p>
-          <button class="button_default">Saiba Mais</button>
-        </div>
-      </div>
-    </section>
+ 
 
     
   
 
-    <footer >
-      <section class="footer__container">
-        <div class="footer__first">
-          <img
-            src="./assets/vertical_transparente.png"
-            alt="Logo Confiança duas mãos se apertando"
-          />
-          <p style="font-size: 1rem;">Rua Gilson Diniz, 70 - Darcy Ribeiro, <br />Contagem - MG</p>
-          <p style="font-size: 1rem;">contato@daanrox.com</p>
-          <p style="font-size: 1rem;">(31) 99281-2273</p>
-        </div>
-
-        <div class="footer__second">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#about">Quem Somos</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="./contato.html">Contato</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__third">
-          <ul>
-            <li>
-              <a
-                href="./docs/Convencao-Coletiva-de-Trabalho-2023.pdf"
-                target="_blank"
-                >CCT Vigilância MG 2023</a
-              >
-            </li>
-            <li>
-              <a
-                href="./docs/Convencao-Coletiva-Servicos-2023.pdf"
-                target="_blank"
-                >CCT Serviços MG 2023</a
-              >
-            </li>
-            <li>
-              <a
-                href="./docs/CCT-SINDEAC-BELO-HORIZONTE-2023.pdf"
-                target="_blank"
-                >CCT Serviços BH 2023</a
-              >
-            </li>
-            <li>
-              <a href="./docs/portaria-18045-dou-1.pdf" target="_blank"
-                >Portaria DPF Nº 18.045, 17/04/2023</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__fourth">
-          <div id="socials">
-            <a href="https://facebook.com/" target="_blank"
-              ><img src="./assets/facebook_circle.png"
-            /></a>
-            <a href="https://instagram.com/" target="_blank"
-              ><img src="./assets/instagram_circle.webp"
-            /></a>
-            <a href="https://linkedin.com/" target="_blank"
-              ><img src="./assets/linkedin_circle.png"
-            /></a>
-            <a href="https://youtube.com/" target="_blank"
-              ><img src="./assets/youtube_circle.png"
-            /></a>
-          </div>
-          <p>Siga-nos nas redes sociais!</p>
-          <img style="width: 105px" src="./assets/quality.png" />
-        </div>
-      </section>
-    </footer>
+ 
 
     <div class="whatsapp-btn"></div>
     <form class="whatsapp__form" id="whatsapp-form">
