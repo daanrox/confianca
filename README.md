@@ -2,7 +2,7 @@
 # Confiança Soluções e Serviços
 Site institucional ainda em desenvolvimento
 
-![Confiança Soluções e Serviços](front_example.jpg)
+![Confiança Soluções e Serviços](confianca_front_example.jpg)
 
 ### Deploy
 Aplicação em produção [https://daanrox.github.io/confianca/](https://daanrox.github.io/confianca/)
